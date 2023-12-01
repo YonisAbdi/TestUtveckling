@@ -4,7 +4,7 @@ För att lösa uppgiften implementerade jag ett användargränssnitt (IDatabase)
 En av utmaningarna jag stod inför var att göra koden så generisk som möjligt samtidigt som den uppfyllde de givna kraven. En annan utmaning var att implementera tester som täckte alla delar av UserManager-klassen.
 
 Lösningar:
-Jag bestämde mig för att använda ett gränssnitt (IDabase) som gör det enkelt att håna databasinteraktioner. Detta gjorde att koden blev mer flexibel och utbytbar.
+Jag bestämde mig för att använda ett gränssnitt (IDatabase) som gör det enkelt att håna databasinteraktioner. Detta gjorde att koden blev mer flexibel och utbytbar.
 Jag använde mig av Moq för att skapa mockobjekt av databasgränssnittet, vilket gjorde det möjligt att isolera enhetstesterna och verifera UserManager och IDatabase.
 Det fanns lite svårigheter med konstruktorinjektion i UserManager, men fick till med att tillhandahålla IDatabase.
 
